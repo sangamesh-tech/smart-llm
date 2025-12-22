@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Summary</title>
+</head>
+<body>
+    <h1>Summary</h1>
+    <p>{{ summary }}</p>
+
+    <hr>
+
+    <h1>Audio Version</h1>
+    <audio controls>
+        <source src="{{ url_for('serve_audio', filename=audio_file) }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <br>
+    <a href="{{ url_for('serve_audio', filename=audio_file) }}" download>Download Audio File</a>
+    <br>
+    <a href="/">Summarize Another File</a>
+</body>
+</html>
