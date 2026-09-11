@@ -1,0 +1,6 @@
+.venv/
+.idea/
+uploads/
+*.mp3
+__pycache__/
+.env
